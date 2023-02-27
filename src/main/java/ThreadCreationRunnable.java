@@ -19,7 +19,6 @@ public class ThreadCreationRunnable {
         Thread t=new Thread(myr);
         t.start();
 
-
         for(int i=0;i<10;i++){
             System.out.println("Main Thread");
         }
