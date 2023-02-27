@@ -1,4 +1,4 @@
-public class CreatingThread {
+class ThreadUncaughtCheckedException {
 
     public static void main(String[] args) {
         Thread t=new Thread(new Runnable() {

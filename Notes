@@ -1,0 +1,55 @@
+Task-->Activity /piece of work
+Os runs multiple tasks to run on PC
+
+Running multiple task at same time is multiTasking
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+MultiTasking
+
+1)Process Level Multitasking(PLM)
+
+Process->its program in execution
+program --> a set of instructions to be executed
+PLM is running muitple proccesses at same time/
+
+Executing several task simulatneously
+where each task is a speratae independenta process is called PLM
+like youtube,intellij ide,vscode,spotify at same time on same computer.
+
+OS takes care all of this.
+
+This switching from one process to another is called Context Switching.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+2)Thread Level
+
+Suppose  we have a java progm,
+it contains three independent task to execute,
+but task 1 is holding for a while so other two tasks will naturally starve.
+SO instead of running the program on a single main thread allocate three threads to
+execute the three tasks to properly utilize the cpu tme, reduce tge response time of system
+and improve performance.
+
+This is Multi Threading and its managed by JVM
+
+Since switching takes place between separate independent threads/tasks of same program
+and managed by JVM,its light weight
+
+JVM will use Thread Scheduler(ts) to control threads.
+
+A independent flow of execution is called Thread
+For every thread ,there will be a seperate job.
+
+
+In java , thread is created in two ways
+1)By Implementing Runnable interface
+2)Extending Thread class
+
+TS
+
+If multiple threads are waiting to be scheduled, it is decided by TS part of JVM.
+In case of MT, we cant predict exact o/p but possible o/p
