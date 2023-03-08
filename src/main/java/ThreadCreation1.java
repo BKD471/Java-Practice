@@ -1,8 +1,11 @@
+import java.util.concurrent.TimeUnit;
+
 class MyThread extends  Thread{
     @Override
     public void run(){
         try {
-            Thread.sleep(5000);
+            //Thread.sleep(5000);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

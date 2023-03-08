@@ -42,7 +42,7 @@ and managed by JVM,its light weight
 JVM will use Thread Scheduler(ts) to control threads.
 
 A independent flow of execution is called Thread
-For every thread ,there will be a seperate job.
+For every thread ,there will be a separate and independent job.
 
 
 In java , thread is created in two ways
@@ -53,3 +53,16 @@ TS
 
 If multiple threads are waiting to be scheduled, it is decided by TS part of JVM.
 In case of MT, we cant predict exact o/p but possible o/p
+
+Thread of a pgm shares memory and files that process been allocated
+but each thread has its own pc,stack and local variables
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Thread types:
+
+1) Daemon :  Background threads such as gc( garbage collector)
+2) Non daemon: created within applications i.e user created thread
+                or main thread by jvm to run main()
+
+
